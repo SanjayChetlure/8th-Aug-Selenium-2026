@@ -1,0 +1,18 @@
+import time
+from selenium import webdriver
+
+
+driver=webdriver.Chrome()
+driver.maximize_window()
+time.sleep(2)
+driver.get("https://www.facebook.com/")
+
+currentAppUrl=driver.current_url
+print(currentAppUrl)
+
+print("----")
+
+
+print(driver.current_url)
+
+time.sleep(10)
