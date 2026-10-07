@@ -6,6 +6,9 @@ driver=webdriver.Chrome()
 time.sleep(2)
 driver.get("https://testautomationpractice.blogspot.com/")
 
-#click on Simple Alert button
-driver.find_element(By.XPATH,"//button[text()='Simple Alert']").click()
+#click on link - Hidden Elements & AJAX
+driver.find_element(By.XPATH,"//a[contains(text(),'AJAX')]").click()
 
+
+
+time.sleep(10)
