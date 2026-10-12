@@ -12,7 +12,7 @@ print(attrValue1)
 
 
 attrValue2=driver.find_element(By.XPATH,"//input[@id='phone']").get_attribute("placeholder")
-print(attrValue2)
+print(attrValue2 )
 
 time.sleep(5)
 
