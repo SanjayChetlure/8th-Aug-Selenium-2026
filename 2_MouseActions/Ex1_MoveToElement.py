@@ -8,7 +8,7 @@ from selenium.webdriver.support.select import Select
 
 driver=webdriver.Chrome()
 driver.maximize_window()
-driver.get("https://www.amazon.in/")
+driver.get(" https://www.amazon.in/")
 time.sleep(2)
 
 #1: Identify Mouse over element
