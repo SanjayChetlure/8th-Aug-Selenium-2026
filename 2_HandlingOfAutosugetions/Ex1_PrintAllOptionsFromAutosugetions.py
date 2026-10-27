@@ -1,0 +1,21 @@
+import time
+from selenium import webdriver
+from selenium.webdriver.common.by import By
+from selenium.webdriver.support.select import Select
+
+driver=webdriver.Chrome()
+driver.maximize_window()
+driver.get("https://www.google.com/")
+
+#Enter mobile
+driver.find_element(By.XPATH,"//textarea[@class='gLFyf']").send_keys("redmi")
+time.sleep(2)
+
+allOptionAddress=driver.find_elements(By.XPATH,"(//ul[@class='G43f7e'])[1]/li")
+
+for eachOptionAddress in allOptionAddress:
+    textValue=eachOptionAddress.text
+    print(textValue)
+
+time.sleep(10)
+
