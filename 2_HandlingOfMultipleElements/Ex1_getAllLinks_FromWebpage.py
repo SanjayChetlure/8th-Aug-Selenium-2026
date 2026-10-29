@@ -15,5 +15,6 @@ for eachLink in allLinks:
     print(s1)
 
 
+
 time.sleep(10)
 

@@ -4,7 +4,9 @@ from selenium.webdriver import Keys
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.select import Select
 
-driver=webdriver.Chrome()
+print("--staring browser--")
+driver=webdriver.Edge()
+print("--started browser--")
 driver.maximize_window()
 driver.get("https://testautomationpractice.blogspot.com/")
 
@@ -26,6 +28,5 @@ time.sleep(1)
 
 #Select option using Enter key
 country.send_keys(Keys.ENTER)
-
 
 time.sleep(10)
