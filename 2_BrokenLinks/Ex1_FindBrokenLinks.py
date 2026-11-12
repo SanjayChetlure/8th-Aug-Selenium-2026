@@ -22,6 +22,7 @@ for link in allLinks:
        #4: If the status code is 400 or greater, print that the link is broken
        if response.status_code >= 400:
            print(f"Broken link: {url} --> {response.status_code}")
+           # print("Broken Link- ", url, "--",response.status_code)
        else:
            print(f"Valid link: {url}")
    except:
