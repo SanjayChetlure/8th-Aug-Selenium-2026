@@ -7,6 +7,7 @@ class SwagLabLoginPage:
     __UN="//input[@id='user-name']"
     __PWD="//input[@id='password']"
     __LoginBtn="//input[@id='login-button']"
+    __loginFailedErrorMsg="//h3[@data-test='error']"
 
     #2: create constructor of class to initialize driver
     def __init__(self,driver):
@@ -27,4 +28,7 @@ class SwagLabLoginPage:
     def clickOnLoginBtn(self):
         self.driver.find_element(By.XPATH,self.__LoginBtn).click()
 
+    def getLoginFailedErrorMsg(self):
+        actLoginFailedMsg=self.driver.find_element(By.XPATH,self.__loginFailedErrorMsg).text
+        return actLoginFailedMsg
 

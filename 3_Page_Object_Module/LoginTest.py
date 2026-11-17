@@ -27,6 +27,4 @@ else:
     print("Login Test is Failed")
 
 
-
-
 time.sleep(5)
